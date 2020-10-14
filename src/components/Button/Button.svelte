@@ -35,7 +35,8 @@ async function ripple(e) {
 }
 </script>
 
-<button bind:this={btn} on:click={ripple} class="button" 
+<button bind:this={btn} on:click on:click={ripple} class="button" 
+    disabled={disabled}
     class:outlined="{type == 'outlined'}"
     class:raised="{type == 'raised'}"
     class:disabled="{disabled}">

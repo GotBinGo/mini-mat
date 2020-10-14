@@ -1,6 +1,6 @@
 {
   "name": "@mini-mat/button",
-  "version": "0.1.4",
+  "version": "0.1.11",
   "description": "Svelte Material UI - Button",
   "scripts": {
     "serve": "svelte-cli-service serve",
