@@ -1,20 +1,34 @@
 <script>
-import HelloWorld from './components/HelloWorld.svelte'
-import logo from './assets/logo.png';
-</script>
+// import Button from '@mini-mat/button';
 
-<div id="app">
-  <img alt="Svelte logo" src={logo}>
-  <HelloWorld message="Svelte"/>
+import Button from './components/Button/Button.svelte'
+// import Input from './components/Input/Input.svelte'
+</script>
+<div>
+    <span>
+        <Button type="basic">Button</Button>
+    </span>
+    <span>
+        <Button type="raised">Button</Button>
+    </span>
+    <span>
+        <Button type="outlined">Button</Button>
+    </span>
+</div>
+<div>
+    <span>
+        <Button disabled type="basic">Button</Button>
+    </span>
+    <span>
+        <Button disabled type="raised">Button</Button>
+    </span>
+    <span>
+        <Button disabled type="outlined">Button</Button>
+    </span>
 </div>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+span, div {
+    margin: 5px;
 }
 </style>
